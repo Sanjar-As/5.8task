@@ -13,7 +13,7 @@ struct new_taskApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Manager()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
